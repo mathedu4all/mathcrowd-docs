@@ -1,0 +1,656 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>数学公式 &mdash; mathcrowd-docs  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="纠错工单" href="issue.html" />
+    <link rel="prev" title="分享试题" href="problem_share.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> mathcrowd-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">入门指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="very_basics.html">基本操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="worksheet_tutorial.html">在线组卷</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem_edit.html">试题编辑</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem_share.html">分享试题</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">数学公式</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#latex"><span class="math notranslate nohighlight">\(\LaTeX\)</span> 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">两种数学模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">换行与空格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">特殊字符与转义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">上标与下标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">大中小括号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">命令与环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">字体说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">常用公式示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="issue.html">纠错工单</a></li>
+</ul>
+<p class="caption"><span class="caption-text">进阶指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advances/bhcexam.html">BHCexam宏包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advances/customized_css.html">自定义css样式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advances/origin.html">发布原创试题</a></li>
+</ul>
+<p class="caption"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/declaration.html">名词解释</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/changelog.html">开发日志</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mathcrowd-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>数学公式</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/mathjax_basics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="latex-tutorial">
+<span id="id1"></span><h1>数学公式<a class="headerlink" href="#latex-tutorial" title="永久链接至标题">¶</a></h1>
+<div class="section" id="latex">
+<h2><span class="math notranslate nohighlight">\(\LaTeX\)</span> 简介<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<p>Donald Knuth 在70年代设计 <span class="math notranslate nohighlight">\(\TeX\)</span> 开源排版系统的一大初衷就是为了在自己即将出版的《计算机程序设计艺术》上轻松实现专业的数学公式呈现. 其后继者 Leslie Lamport 80年代在 <span class="math notranslate nohighlight">\(\TeX\)</span> 的基础上实现推出了 <span class="math notranslate nohighlight">\(\LaTeX\)</span>，其实质是基于 <span class="math notranslate nohighlight">\(\TeX\)</span> 的各种功能、样式的宏包集，其实现了内容与呈现分离. 这让 <span class="math notranslate nohighlight">\(\LaTeX\)</span> 在学术界大受欢迎，因为它让科学工作者只需要几分钟学习时间就可以上手排版自己的学术论文. 发展至今，<span class="math notranslate nohighlight">\(\TeX\)</span> 用户群体已经十分壮大， <a class="reference external" href="https://tug.org/">TeX Users Group(TUG)</a> 已经整合了所有 <span class="math notranslate nohighlight">\(\TeX\)</span> 相关资源，建立了 <a class="reference external" href="https://ctan.org/">Comprehensive TeX Archive Network (CTAN)</a> 宏包库，并同时维护着 <a class="reference external" href="http://www.tug.org/texlive/">TeX Live</a> , <a class="reference external" href="http://www.tug.org/mactex/">MacTeX</a>  和 <a class="reference external" href="http://www.tug.org/protext/">proTeXt</a> 三个发行版本.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>与 Word 的 <code class="docutils literal notranslate"><span class="pre">.doc</span></code> 等采用富文本格式不同，$TeX$所采用的是纯文本的文件格式，所以它不依赖特定的文本编辑软件，你完全可以用记事本来写 <span class="math notranslate nohighlight">\(\TeX\)</span>，甚至你都不需要鼠标.</p>
+</div>
+<p>随着因特网的发展，人们又把关注的焦点转向如何轻松实现数学公式在网页上的呈现，于是涌现了一大批如 <a class="reference external" href="https://www.mathjax.org/">MathJax</a>、<a class="reference external" href="https://katex.org/">KaTeX</a> 这些支持在网页支持 <span class="math notranslate nohighlight">\(\TeX\)</span> 方式呈现数学公式的库.</p>
+<p>数学公式的处理对于橘子数学的海量数学试题库来说无疑是至关重要，于是网站采用$LaTeX$排版系统并自主研发了一个试卷宏包以实现了数学试卷的标准排版( 见 <a class="reference internal" href="../advances/bhcexam.html#bhcexam"><span class="std std-ref">BHCexam 宏包</span></a> )，我们也就需要以 <span class="math notranslate nohighlight">\(\TeX\)</span> 的方式来录入数学公式. 下面我们将尽可能简单地介绍如何用 <span class="math notranslate nohighlight">\(\TeX\)</span> 表示数学公式，以求读者能够在10分钟左右的时间里掌握一些常见的用法可以在橘子数学网站上录入一些公式.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>阅读中译版教程 <a class="reference external" href="https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.01/lshort-zh-cn.pdf">《110分钟了解LaTeX》</a> 可以帮助你对 <span class="math notranslate nohighlight">\(\LaTeX\)</span> 有一个更全面的了解.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>两种数学模式<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<dl>
+<dt>inline mode</dt><dd><p>将数学公式夹在两个``$``之间, 使数学公式与普通文字混排在段落中.</p>
+<p>Code：</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="s">$</span><span class="o">(</span><span class="nb">a</span><span class="o">+</span><span class="nb">b</span><span class="o">)</span><span class="nb">^</span><span class="m">2</span><span class="o">=</span><span class="nb">a^</span><span class="m">2</span><span class="o">+</span><span class="m">2</span><span class="nb">ab</span><span class="o">+</span><span class="nb">b^</span><span class="m">2</span><span class="s">$</span>是一条 inline 模式的数学公式.
+</pre></div>
+</div>
+<p>Output：</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((a+b)^2=a^2+2ab+b^2\)</span> 是一条 inline 模式的数学公式.</p>
+</div></blockquote>
+</dd>
+<dt>display mode</dt><dd><p>将数学公式夹在 <code class="docutils literal notranslate"><span class="pre">\[</span></code> 与 <code class="docutils literal notranslate"><span class="pre">\]</span></code> 之间,使数学公式单独放在一个段落并居中.</p>
+<p>Code：</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>这是一条 display 模式的数学公式:<span class="sb">\[</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">+</span><span class="nb">b</span><span class="o">)</span><span class="nb">^</span><span class="m">2</span><span class="o">=</span><span class="nb">a^</span><span class="m">2</span><span class="o">+</span><span class="m">2</span><span class="nb">ab</span><span class="o">+</span><span class="nb">b^</span><span class="m">2</span><span class="nb"> </span><span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output：</p>
+<blockquote>
+<div><p>这是一条 display 模式的数学公式:</p>
+<div class="math notranslate nohighlight">
+\[(a+b)^2=a^2+2ab+b^2\]</div>
+</div></blockquote>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>使用 <strong>display</strong> 模式注意控制公式的长度，以防超出屏幕或纸张.</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>换行与空格<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>在 <span class="math notranslate nohighlight">\(\LaTeX\)</span> 中：</p>
+<ul class="simple">
+<li><p>单独一次回车不换行算一次空格，两次及两次以上回车换一行;</p></li>
+<li><p>连续多个空格、制表符、单独一次回车算一次空格;</p></li>
+<li><p>跟在命令后面的空格会被忽略;</p></li>
+<li><p>强制空格可用 <code class="docutils literal notranslate"><span class="pre">~</span></code> 或 <code class="docutils literal notranslate"><span class="pre">\quad</span></code>，后者为4个空格;</p></li>
+<li><p>强制换行可用 <code class="docutils literal notranslate"><span class="pre">\\</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>特殊字符与转义<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>以下字符在 <span class="math notranslate nohighlight">\(\LaTeX\)</span> 中需要进行转义:</p>
+<blockquote>
+<div><p># $ % ^ &amp; _ { } ~</p>
+</div></blockquote>
+<p>Code:</p>
+<blockquote>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">\[</span><span class="nv">\#</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\$</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\%</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{^} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\&amp;</span><span class="nb"></span>
+<span class="nv">\quad</span><span class="nb"> </span><span class="nv">\_</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\{</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\}</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\text</span><span class="nb">{~} </span><span class="s">\]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Output:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\# \quad \$ \quad \% \quad \text{^} \quad \&amp; \quad \_ \quad \{ \quad \} \quad \text{~}\]</div>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h2>上标与下标<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<dl class="simple">
+<dt>{ele}^{upper}, {ele}_{lower}</dt><dd><p>在 <span class="math notranslate nohighlight">\(\LaTeX\)</span> 中用 <code class="docutils literal notranslate"><span class="pre">^</span></code> 和 <code class="docutils literal notranslate"><span class="pre">_</span></code> 标明上下标。注意上下标的内容(子公式)一般需要用花括号包裹,否则上下标只对后面的一个符号起作用.</p>
+</dd>
+</dl>
+<p>Code:</p>
+<blockquote>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>注意<span class="s">$</span><span class="nb">x^{</span><span class="m">10</span><span class="nb">}</span><span class="s">$</span>不要写成<span class="s">$</span><span class="nb">x^</span><span class="m">10</span><span class="s">$</span>.
+</pre></div>
+</div>
+</div></blockquote>
+<p>Output:</p>
+<blockquote>
+<div><p>注意 <span class="math notranslate nohighlight">\(x^{10}\)</span> 不要写成 <span class="math notranslate nohighlight">\(x^10\)</span>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h2>大中小括号<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>一般情况下，在数学公式中除了大括号 <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> 需要转义外，<code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)[</span> <span class="pre">]</span></code> 可以直接使用. 但一些情况下在括号前使用 <code class="docutils literal notranslate"><span class="pre">\left</span></code> 和 <code class="docutils literal notranslate"><span class="pre">\right</span></code> 命令自动调整括号的高度，可以使数学公式更美观. 注意 <code class="docutils literal notranslate"><span class="pre">\left</span></code> 和 <code class="docutils literal notranslate"><span class="pre">\right</span></code> 命令必须成对使用.</p>
+<p>Code:</p>
+<blockquote>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>注意下面两者的区别.
+
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\left\{\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">3</span><span class="nb">}</span><span class="o">+</span><span class="nv">\left</span><span class="o">[</span><span class="nv">\left</span><span class="o">(</span><span class="m">2</span><span class="nb">^</span><span class="m">4</span><span class="nv">\right</span><span class="o">)</span><span class="nb">^{</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">3</span><span class="nb">}}</span><span class="o">+</span><span class="m">4</span><span class="nv">\right</span><span class="o">]</span><span class="nv">\right\}</span><span class="nb">^</span><span class="m">2</span><span class="nb"></span>
+<span class="s">\]</span>
+
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\{\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">3</span><span class="nb">}</span><span class="o">+[(</span><span class="m">2</span><span class="nb">^</span><span class="m">4</span><span class="o">)</span><span class="nb">^{</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">3</span><span class="nb">}}</span><span class="o">+</span><span class="m">4</span><span class="o">]</span><span class="nv">\}</span><span class="nb">^</span><span class="m">2</span><span class="nb"></span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Output:</p>
+<blockquote>
+<div><p>注意下面两者的区别.</p>
+<div class="math notranslate nohighlight">
+\[\left\{\frac{1}{3}+\left[\left(2^4\right)^{\frac{1}{3}}+4\right]\right\}^2\]</div>
+<div class="math notranslate nohighlight">
+\[\{\frac{1}{3}+[(2^4)^{\frac{1}{3}}+4]\}^2\]</div>
+</div></blockquote>
+</div>
+<div class="section" id="id8">
+<h2>命令与环境<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<dl>
+<dt>\command</dt><dd><p>斜杠 <code class="docutils literal notranslate"><span class="pre">\</span></code> 在 <span class="math notranslate nohighlight">\(\TeX\)</span> 中是转义符，其后跟一些英文单词就成为一条 <strong>命令</strong> .</p>
+<p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>这是一些<span class="s">$</span><span class="nv">\TeX</span><span class="s">$</span>命令:<span class="sb">\[</span><span class="nv">\TeX</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\times</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\pi</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\triangle</span><span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<p>这是一些 <span class="math notranslate nohighlight">\(\TeX\)</span> 命令:</p>
+<div class="math notranslate nohighlight">
+\[\TeX \quad \times \quad \pi \quad \triangle\]</div>
+</dd>
+<dt>\command[optional parameter]{parameter1}{parameter2}</dt><dd><p>有些 <strong>命令</strong> 需要接受一个或多个参数, 我们把参数用大括号 <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> 包起来按顺序跟在命令后面, 可选参数则写在命令与所有参数之间的 <code class="docutils literal notranslate"><span class="pre">[]</span></code> 里.</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>一个参数的命令: <span class="s">$</span><span class="nv">\overrightarrow</span><span class="nb">{AB}</span><span class="s">$</span>、<span class="s">$</span><span class="nv">\bar</span><span class="nb">{z}</span><span class="s">$</span>、<span class="s">$</span><span class="nv">\sqrt</span><span class="nb">{</span><span class="m">3</span><span class="nb">}</span><span class="s">$</span>;
+
+多个参数的命令: <span class="s">$</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">}</span><span class="s">$</span>;
+
+含有可选参数的命令: <span class="s">$</span><span class="nv">\sqrt</span><span class="o">[</span><span class="m">3</span><span class="o">]</span><span class="nb">{</span><span class="m">5</span><span class="nb">}</span><span class="s">$</span>.
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>一个参数的命令: <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> 、<span class="math notranslate nohighlight">\(\bar{z}\)</span> 、<span class="math notranslate nohighlight">\(\sqrt{3}\)</span> ;</p>
+<p>多个参数的命令: <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> ;</p>
+<p>含有可选参数的命令: <span class="math notranslate nohighlight">\(\sqrt[3]{5}\)</span> .</p>
+</div></blockquote>
+</dd>
+<dt>environment</dt><dd><p>环境是分别以 <code class="docutils literal notranslate"><span class="pre">\begin</span></code> 和 <code class="docutils literal notranslate"><span class="pre">\end</span></code> 两条命令为首尾的代码块，环境中可以嵌套环境. <code class="docutils literal notranslate"><span class="pre">\begin</span></code> 命令可以包含除了环境名以外的其他参数.</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>environment<span class="nb">}</span>
+...
+<span class="k">\end</span><span class="nb">{</span>environment<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>environment<span class="nb">}</span>[optional parameter]<span class="nb">{</span>parameter1<span class="nb">}</span>
+...
+<span class="k">\end</span><span class="nb">{</span>environment<span class="nb">}</span>
+</pre></div>
+</div>
+<p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>分段函数:
+<span class="sb">\[</span><span class="nb">f</span><span class="o">(</span><span class="nb">x</span><span class="o">)=</span><span class="nv">\begin</span><span class="nb">{cases}</span>
+<span class="nb">    </span><span class="m">1</span><span class="nb"> &amp; x</span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\mathbf</span><span class="nb">{Q}</span>
+<span class="nb">    </span><span class="m">0</span><span class="nb"> &amp; x</span><span class="nv">\notin</span><span class="nb"> </span><span class="nv">\mathbf</span><span class="nb">{Q}</span>
+<span class="nv">\end</span><span class="nb">{cases}</span><span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<p>分段函数:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f(x)=\begin{cases}
+    1 &amp; x\in \mathbf{Q}\\
+    0 &amp; x\notin \mathbf{Q}
+\end{cases}\end{split}\]</div>
+</dd>
+</dl>
+</div>
+<div class="section" id="id9">
+<h2>字体说明<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<dl>
+<dt>\mathrm</dt><dd><p>阿拉伯数字、运算符、函数名、常量(英文字母)用正体，若有专属命令则调用该命令，可以用 <code class="docutils literal notranslate"><span class="pre">\mathrm</span></code> 设置为正体;</p>
+<p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>注意 <span class="s">$</span><span class="nb">sin</span><span class="s">$</span> 和 <span class="s">$</span><span class="nv">\sin</span><span class="s">$</span> 以及 <span class="s">$</span><span class="m">3</span><span class="o">+</span><span class="m">2</span><span class="nb">i</span><span class="s">$</span> 与 <span class="s">$</span><span class="m">3</span><span class="o">+</span><span class="m">2</span><span class="nv">\mathrm</span><span class="nb">{i}</span><span class="s">$</span> 的区别.
+</pre></div>
+</div>
+<p>Output:</p>
+<p>注意 <span class="math notranslate nohighlight">\(sin\)</span> 和 <span class="math notranslate nohighlight">\(\sin\)</span> 以及 <span class="math notranslate nohighlight">\(3+2i\)</span> 与 <span class="math notranslate nohighlight">\(3+2\mathrm{i}\)</span> 的区别.</p>
+</dd>
+<dt>\mathit</dt><dd><p>变量名、常量(希腊字母)用斜体，可以用 <code class="docutils literal notranslate"><span class="pre">\mathit</span></code> 设置为斜体(一般情况下保持默认即可);</p>
+<p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>注意<span class="s">$</span><span class="nv">\pi</span><span class="nb"> </span><span class="nv">\approx</span><span class="nb"> </span><span class="m">3</span><span class="nb">.</span><span class="m">1415926</span><span class="nb"> </span><span class="nv">\cdots</span><span class="s">$</span> 与 <span class="s">$</span><span class="nv">\mathit</span><span class="nb">{</span><span class="nv">\pi</span><span class="nb"> </span><span class="nv">\approx</span><span class="nb"> </span><span class="m">3</span><span class="nb">.</span><span class="m">1415926</span><span class="nb"> </span><span class="nv">\cdots</span><span class="nb">}</span><span class="s">$</span> 的区别
+</pre></div>
+</div>
+<p>Output:</p>
+<p>注意 <span class="math notranslate nohighlight">\(\pi \approx 3.1415926 \cdots\)</span> 与 <span class="math notranslate nohighlight">\(\mathit{\pi \approx 3.1415926 \cdots}\)</span> 的区别</p>
+</dd>
+<dt>\mathbf</dt><dd><p>常用集合名用粗体，用 <code class="docutils literal notranslate"><span class="pre">\mathbf</span></code> 设置为粗体;</p>
+<p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>注意 <span class="s">$</span><span class="nb">x </span><span class="nv">\in</span><span class="nb"> R</span><span class="s">$</span> 与 <span class="s">$</span><span class="nb">x in </span><span class="nv">\mathbf</span><span class="nb">{R}</span><span class="s">$</span> 的区别
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>注意 <span class="math notranslate nohighlight">\(x \in R\)</span> 与 <span class="math notranslate nohighlight">\(x in \mathbf{R}\)</span> 的区别</p>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="id10">
+<h2>常用公式示例<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<ul>
+<li><p>运算符号</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>加减乘除:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\times</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\cdot</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\div</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\pm</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\mp</span><span class="nb"></span>
+<span class="s">\]</span>
+
+分数:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">} </span><span class="nv">\quad</span><span class="nb"> </span><span class="m">3</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">1</span><span class="nb">}</span><span class="o">+</span><span class="m">2</span><span class="nb">}</span><span class="o">+</span><span class="m">3</span><span class="nb">}</span><span class="o">+</span><span class="m">4</span><span class="nb"></span>
+<span class="s">\]</span>
+
+乘方开方:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    x^{</span><span class="o">-</span><span class="m">2</span><span class="nb">} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\sqrt</span><span class="o">[</span><span class="m">4</span><span class="o">]</span><span class="nb">{x^{</span><span class="m">2</span><span class="nb">}} </span><span class="nv">\quad</span><span class="nb"> </span><span class="m">2</span><span class="nb">^{</span><span class="o">-</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">}}</span>
+<span class="s">\]</span>
+
+复数运算:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\mathrm</span><span class="nb">{Re}{z} </span><span class="nv">\quad</span><span class="nb">  </span><span class="nv">\mathrm</span><span class="nb">{Im}{z} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\overline</span><span class="nb">{z}</span>
+<span class="s">\]</span>
+
+集合运算:
+
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\cap</span><span class="nb">~</span><span class="nv">\cup</span><span class="nb">~</span><span class="nv">\complement</span><span class="nb">_{</span><span class="nv">\mathrm</span><span class="nb">{U}}</span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>加减乘除:</p>
+<div class="math notranslate nohighlight">
+\[\times \quad \cdot \quad \div \quad \pm \quad \mp\]</div>
+<p>分数:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} \quad 3\frac{1}{2} \quad \frac{1}{\frac{1}{\frac{1}{1}+2}+3}+4\]</div>
+<p>乘方开方:</p>
+<div class="math notranslate nohighlight">
+\[x^{-2} \quad \sqrt[4]{x^{2}} \quad 2^{-\frac{1}{2}}\]</div>
+<p>复数运算:</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Re}{z} \quad \mathrm{Im}{z} \quad \overline{z}\]</div>
+<p>集合运算:</p>
+<div class="math notranslate nohighlight">
+\[\cap~\cup~\complement_{\mathrm{U}}\]</div>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>关系符号</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>大小关系:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\gt</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\ge</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\lt</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\le</span><span class="nb"></span>
+<span class="s">\]</span>
+
+几何关系:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\angle</span><span class="nb"> A </span><span class="nv">\lt</span><span class="nb"> </span><span class="nv">\angle</span><span class="nb"> B </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\triangle</span><span class="nb">{ABC}</span><span class="nv">\sim\triangle</span><span class="nb">{A&#39;B&#39;C&#39;} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\alpha</span><span class="nb"> </span><span class="nv">\bot</span><span class="nb"> </span><span class="nv">\beta</span><span class="nb"></span>
+<span class="s">\]</span>
+
+集合关系:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\notin</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subset</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supset</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subseteq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supseteq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subsetneqq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supsetneqq</span><span class="nb"></span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>大小关系:</p>
+<div class="math notranslate nohighlight">
+\[\gt \quad \ge \quad \lt \quad \le\]</div>
+<p>几何关系:</p>
+<div class="math notranslate nohighlight">
+\[\angle A \lt \angle B \quad \quad \triangle{ABC}\sim\triangle{A'B'C'} \quad \alpha \bot \beta\]</div>
+<p>集合关系:</p>
+<div class="math notranslate nohighlight">
+\[\in \quad \notin \quad \subset \quad \supset \quad \subseteq \quad \supseteq \quad \subsetneqq \quad \supsetneqq\]</div>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>常用函数</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>三角函数:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\sin</span><span class="nb">{x} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\cos</span><span class="o">(</span><span class="nb">x</span><span class="o">+</span><span class="m">2</span><span class="nv">\pi</span><span class="o">)</span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\tan\alpha</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\cot</span><span class="nb">{x} </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\arctan</span><span class="nb">{x} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\arccos</span><span class="nb">{x} </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\sin</span><span class="nb">^{</span><span class="o">-</span><span class="m">1</span><span class="nb">}{x}</span>
+<span class="s">\]</span>
+
+对数函数:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\log</span><span class="nb">_{</span><span class="m">10</span><span class="nb">}{x}~</span><span class="nv">\ln</span><span class="nb">{x}~</span><span class="nv">\lg</span><span class="nb">{x}</span>
+<span class="s">\]</span>
+
+集合关系:
+<span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\notin</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subset</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supset</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subseteq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supseteq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\subsetneqq</span><span class="nb"> </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\supsetneqq</span><span class="nb"></span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>三角函数:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sin{x} \quad \cos(x+2\pi)\quad \tan\alpha \quad \cot{x} \\
+\arctan{x} \quad \arccos{x} \quad \sin^{-1}{x}\end{split}\]</div>
+<p>对数函数:</p>
+<div class="math notranslate nohighlight">
+\[\log_{10}{x} \quad \ln{x} \quad \lg{x}\]</div>
+<p>其它函数:</p>
+<div class="math notranslate nohighlight">
+\[\max{f(x)} \quad \min{a_n}\]</div>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>矩阵行列式</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\left</span><span class="nb">|</span><span class="nv">\begin</span><span class="nb">{array}{lll}</span>
+<span class="nb">        </span><span class="m">1</span><span class="nb"> &amp; </span><span class="m">2</span><span class="nb"> &amp; </span><span class="m">3</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">        </span><span class="m">3</span><span class="nb"> &amp; </span><span class="m">3</span><span class="nb"> &amp; </span><span class="m">4</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">        </span><span class="nv">\end</span><span class="nb">{array}</span><span class="nv">\right</span><span class="nb">|</span>
+<span class="nb">        </span><span class="nv">\quad</span><span class="nb"></span>
+<span class="nb">        </span><span class="nv">\left</span><span class="o">(</span><span class="nv">\begin</span><span class="nb">{array}{ll}</span>
+<span class="nb">        </span><span class="m">1</span><span class="nb"> &amp; </span><span class="m">2</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">        </span><span class="m">3</span><span class="nb"> &amp; </span><span class="m">3</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\end</span><span class="nb">{array}</span><span class="nv">\right</span><span class="o">)</span><span class="nb"></span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left|\begin{array}{lll}
+    1 &amp; 2 &amp; 3 \\
+    3 &amp; 3 &amp; 4 \\
+\end{array}\right|
+\quad
+\left(\begin{array}{ll}
+    1 &amp; 2 \\
+    3 &amp; 3 \\
+\end{array}\right)\end{split}\]</div>
+</div></blockquote>
+</li>
+<li><p>极限:</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">\[</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\lim\limits</span><span class="nb">_{n</span><span class="nv">\to\infty</span><span class="nb">}a_n </span><span class="nv">\quad</span><span class="nb"> </span><span class="nv">\lim\limits</span><span class="nb">_{x</span><span class="nv">\to</span><span class="m">0</span><span class="nb">^</span><span class="o">+</span><span class="nb">}f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nb"></span>
+<span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="math notranslate nohighlight">
+\[\lim\limits_{n\to\infty}a_n \quad \lim\limits_{x\to0^+}f(x)\]</div>
+</div></blockquote>
+</li>
+<li><p>连等式:</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">\[</span><span class="nv">\begin</span><span class="nb">{aligned}</span>
+<span class="nb">    f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nb">&amp;</span><span class="o">=</span><span class="m">2</span><span class="nv">\sin</span><span class="o">(</span><span class="nb">x</span><span class="o">)+</span><span class="m">2</span><span class="nv">\cos</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    &amp;</span><span class="o">=</span><span class="m">2</span><span class="nv">\sqrt</span><span class="nb">{</span><span class="m">2</span><span class="nb">}</span><span class="nv">\sin</span><span class="o">(</span><span class="nb">x</span><span class="o">+</span><span class="nv">\frac</span><span class="nb">{</span><span class="nv">\pi</span><span class="nb">}{</span><span class="m">4</span><span class="nb">}</span><span class="o">)</span><span class="nv">\\</span><span class="nb"></span>
+<span class="nv">\end</span><span class="nb">{aligned}</span>
+<span class="nv">\quad</span><span class="nb"></span>
+<span class="nv">\begin</span><span class="nb">{aligned}</span>
+<span class="nb">    &amp; </span><span class="o">(</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="o">)</span><span class="nb">^</span><span class="m">2</span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="o">=</span><span class="nb"> &amp; </span><span class="o">(</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="o">)(</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="o">)</span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="o">=</span><span class="nb"> &amp; x^</span><span class="m">2</span><span class="o">+</span><span class="nb">x</span><span class="o">+</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="o">=</span><span class="nb"> &amp; x^</span><span class="m">2</span><span class="o">+</span><span class="m">2</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="nb"></span>
+<span class="nv">\end</span><span class="nb">{aligned}</span><span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    f(x)&amp;=2\sin(x)+2\cos(x)\\
+    &amp;=2\sqrt{2}\sin(x+\frac{\pi}{4})\\
+\end{aligned}
+\quad
+\begin{aligned}
+    &amp; (x+1)^2\\
+    = &amp; (x+1)(x+1)\\
+    = &amp; x^2+x+x+1\\
+    = &amp; x^2+2x+1
+\end{aligned}\end{split}\]</div>
+</div></blockquote>
+</li>
+<li><p>表格</p>
+<blockquote>
+<div><p>Code:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">\[</span><span class="nv">\begin</span><span class="nb">{array}{|l|l|l|l|}</span>
+<span class="nb">    </span><span class="nv">\hline</span><span class="nb"></span>
+<span class="nb">    x &amp; </span><span class="m">1</span><span class="nb"> &amp; </span><span class="m">2</span><span class="nb"> &amp; </span><span class="m">3</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\hline</span><span class="nb"></span>
+<span class="nb">    y &amp; </span><span class="m">2</span><span class="nb"> &amp; </span><span class="m">4</span><span class="nb"> &amp; </span><span class="m">6</span><span class="nb"> </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">    </span><span class="nv">\hline</span><span class="nb"></span>
+<span class="nv">\end</span><span class="nb">{array}</span><span class="s">\]</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{|l|l|l|l|}
+    \hline
+    x &amp; 1 &amp; 2 &amp; 3 \\
+    \hline
+    y &amp; 2 &amp; 4 &amp; 6 \\
+    \hline
+\end{array}\end{split}\]</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="issue.html" class="btn btn-neutral float-right" title="纠错工单" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="problem_share.html" class="btn btn-neutral float-left" title="分享试题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, 橘子数学
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

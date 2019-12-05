@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>名词解释及一些说明 &mdash; mathcrowd-docs  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="开发日志" href="changelog.html" />
+    <link rel="prev" title="发布原创题" href="../advances/origin.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> mathcrowd-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">入门指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/very_basics.html">基本操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/worksheet_tutorial.html">在线组卷</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/problem_edit.html">试题编辑</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/problem_share.html">分享试题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/mathjax_basics.html">数学公式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/issue.html">纠错工单</a></li>
+</ul>
+<p class="caption"><span class="caption-text">进阶指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advances/bhcexam.html">BHCexam宏包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advances/customized_css.html">自定义css样式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advances/origin.html">发布原创试题</a></li>
+</ul>
+<p class="caption"><span class="caption-text">其他</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">名词解释</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#problem-definition">试题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-type-definition">不同类型试题的文本结构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-solution-definition">试题解析的文本结构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-copy-definition">衍生试题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-group-definition">题组</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#worksheet-definition">组卷</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#worksheet-type-definition">组卷类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cart-definition">试题车</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">开发日志</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mathcrowd-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>名词解释及一些说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/misc/declaration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>名词解释及一些说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="problem-definition">
+<span id="id2"></span><h2>试题<a class="headerlink" href="#problem-definition" title="永久链接至标题">¶</a></h2>
+<p>即试题库中的一个数据条目，其可能包含以下信息：</p>
+<ul class="simple">
+<li><p>试题的文本及图像</p></li>
+<li><p>试题解析的文本及图像</p></li>
+<li><p>试题的类型(填空、选择、简答)</p></li>
+<li><p>试题的状态(缺详解、有详解、已校对)</p></li>
+</ul>
+</div>
+<div class="section" id="problem-type-definition">
+<span id="id3"></span><h2>不同类型试题的文本结构<a class="headerlink" href="#problem-type-definition" title="永久链接至标题">¶</a></h2>
+<p><strong>填空题</strong> 的文本格式如下：</p>
+<dl class="simple">
+<dt>题目文本1 (答案文本1) 题目文本2 (答案文本2) …</dt><dd><p>即填空题文本由题目文本和答案文本间隔组成.</p>
+</dd>
+</dl>
+<p><strong>选择题</strong> 的文本格式如下：</p>
+<dl class="simple">
+<dt>题目文本1 (答案文本1) 题目文本2 选项文本1 选项文本2 选项文本3  …</dt><dd><p>即选择文本由题目文本、答案文本和选项文本依次组成.</p>
+</dd>
+</dl>
+<p><strong>简答题</strong> 的文本格式如下：</p>
+<dl class="simple">
+<dt>题干文本1 小问文本1 小问文本2 …</dt><dd><p>即简答题文本由一个题干文本和若干小问文本组成.</p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>橘子数学以上述结构化文本存储试题，并以此实现统一的试题式样. 所以请不要在试题文本中出现横线( <code class="docutils literal notranslate"><span class="pre">______</span></code> )或小问( <code class="docutils literal notranslate"><span class="pre">(1)</span></code>、<code class="docutils literal notranslate"><span class="pre">(i)</span></code> )编号.</p>
+</div>
+</div>
+<div class="section" id="problem-solution-definition">
+<span id="id4"></span><h2>试题解析的文本结构<a class="headerlink" href="#problem-solution-definition" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{
+    提示: {文本}
+    解法1:{
+        步骤1: {文本，分值},
+        步骤2: {文本，分值},
+        ...:...
+    },
+    解法2:{
+        步骤1: {文本，分值},
+        步骤2: {文本，分值},
+        ...:...
+    },
+    ...
+}
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>解析中的提示是用户在移动端点击“查看解析”前与题目一并显示的文字，这些文字可以包含但不限于解题思路、所用的知识点等.</p></li>
+<li><p>解析中的分值为0-100的整数，表示步骤占整体解析分值的百分比.</p></li>
+</ul>
+</div>
+<div class="section" id="problem-copy-definition">
+<span id="id5"></span><h2>衍生试题<a class="headerlink" href="#problem-copy-definition" title="永久链接至标题">¶</a></h2>
+<p>衍生试题是由用户创建的试题副本，在以下场景中，用户可以创建衍生试题：</p>
+<ul class="simple">
+<li><p>需要对原题试题进行改编，如删减一小问、变更题型、变更条件等，可以创建衍生试题在原试题上进行修改;</p></li>
+<li><p>对原试题或解析不满意，但又无法获得该试题编辑权限，可以创建衍生试题自行修改.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>不支持对原创试题或衍生试题进行衍生.</p>
+</div>
+</div>
+<div class="section" id="problem-group-definition">
+<span id="id6"></span><h2>题组<a class="headerlink" href="#problem-group-definition" title="永久链接至标题">¶</a></h2>
+<p>即“试卷”中的大题(如“第一部分 填空题”)的概念，其由若干试题组合而成. 其可能包含以下信息：</p>
+<ul class="simple">
+<li><p>试题及其在题组中的位置和所占的分值;</p></li>
+<li><p>是否显示本题组中试题的分值;</p></li>
+<li><p>是否在本题组中的试题后预留答题空间.</p></li>
+</ul>
+<p>用户在试题车中的初始组卷包含三个题组: 填空、选择、简答，相关设置如下：</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>填空</p></th>
+<th class="head"><p>选择</p></th>
+<th class="head"><p>简答</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>预留答题空间</p></td>
+<td><p>是</p></td>
+<td><p>否</p></td>
+<td><p>是</p></td>
+</tr>
+<tr class="row-odd"><td><p>显示分值</p></td>
+<td><p>否</p></td>
+<td><p>否</p></td>
+<td><p>是</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="worksheet-definition">
+<span id="id7"></span><h2>组卷<a class="headerlink" href="#worksheet-definition" title="永久链接至标题">¶</a></h2>
+<p>组卷即“试卷”的概念，其由若干题组组成，其包含了以下信息：</p>
+<ul class="simple">
+<li><p>试卷的名称、命题人、说明、日期等;</p></li>
+<li><p>题组及其在试卷中的位置和所占分值;</p></li>
+<li><p>试卷的类型以及是否对其他用户可见.</p></li>
+</ul>
+</div>
+<div class="section" id="worksheet-type-definition">
+<span id="id8"></span><h2>组卷类型<a class="headerlink" href="#worksheet-type-definition" title="永久链接至标题">¶</a></h2>
+<p>橘子数学预设了三种组卷类型： 讲义、练习、考试，其区别如下:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 19%" />
+<col style="width: 25%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>讲义</p></th>
+<th class="head"><p>练习</p></th>
+<th class="head"><p>考试</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>预留答题空间</p></td>
+<td><p>是</p></td>
+<td><p>否</p></td>
+<td><p>否</p></td>
+</tr>
+<tr class="row-odd"><td><p>显示分值</p></td>
+<td><p>否</p></td>
+<td><p>否</p></td>
+<td><p>是</p></td>
+</tr>
+<tr class="row-even"><td><p>全局编号</p></td>
+<td><p>否</p></td>
+<td><p>是</p></td>
+<td><p>是</p></td>
+</tr>
+<tr class="row-odd"><td><p>磁力推荐</p></td>
+<td><p>支持</p></td>
+<td><p>不支持</p></td>
+<td><p>不支持</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>用户在选择组卷类型后，依旧可以根据需要对每个题组的预览答题空间和显示分值设置进行微调.</p>
+</div>
+</div>
+<div class="section" id="cart-definition">
+<span id="id9"></span><h2>试题车<a class="headerlink" href="#cart-definition" title="永久链接至标题">¶</a></h2>
+<p>即编辑中的组卷所使用的临时存储空间，待用户保存组卷后即清空. 用户只能在试题车中同时编辑一份组卷.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changelog.html" class="btn btn-neutral float-right" title="开发日志" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../advances/origin.html" class="btn btn-neutral float-left" title="发布原创题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, 橘子数学
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
