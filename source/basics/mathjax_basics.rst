@@ -5,10 +5,10 @@
 =========
 
 -------------------------
-:math:`\LaTeX` 简介
+:math:`\text{\LaTeX}` 简介
 -------------------------
 
-Donald Knuth 在70年代设计 :math:`\TeX` 开源排版系统的一大初衷就是为了在自己即将出版的《计算机程序设计艺术》上轻松实现专业的数学公式呈现. 其后继者 Leslie Lamport 80年代在 :math:`\TeX` 的基础上实现推出了 :math:`\LaTeX`，其实质是基于 :math:`\TeX` 的各种功能、样式的宏包集，其实现了内容与呈现分离. 这让 :math:`\LaTeX` 在学术界大受欢迎，因为它让科学工作者只需要几分钟学习时间就可以上手排版自己的学术论文. 发展至今，:math:`\TeX` 用户群体已经十分壮大， `TeX Users Group(TUG) <https://tug.org/>`_ 已经整合了所有 :math:`\TeX` 相关资源，建立了 `Comprehensive TeX Archive Network (CTAN) <https://ctan.org/>`_ 宏包库，并同时维护着 `TeX Live <http://www.tug.org/texlive/>`_ , `MacTeX <http://www.tug.org/mactex/>`_  和 `proTeXt <http://www.tug.org/protext/>`_ 三个发行版本.
+Donald Knuth 在70年代设计 :math:`\TeX` 开源排版系统的一大初衷就是为了在自己即将出版的《计算机程序设计艺术》上轻松实现专业的数学公式呈现. 其后继者 Leslie Lamport 80年代在 :math:`\TeX` 的基础上实现推出了 :math:`\text{\LaTeX}`，其实质是基于 :math:`\TeX` 的各种功能、样式的宏包集，其实现了内容与呈现分离. 这让 :math:`\text{\LaTeX}` 在学术界大受欢迎，因为它让科学工作者只需要几分钟学习时间就可以上手排版自己的学术论文. 发展至今，:math:`\TeX` 用户群体已经十分壮大， `TeX Users Group(TUG) <https://tug.org/>`_ 已经整合了所有 :math:`\TeX` 相关资源，建立了 `Comprehensive TeX Archive Network (CTAN) <https://ctan.org/>`_ 宏包库，并同时维护着 `TeX Live <http://www.tug.org/texlive/>`_ , `MacTeX <http://www.tug.org/mactex/>`_  和 `proTeXt <http://www.tug.org/protext/>`_ 三个发行版本.
 
 .. note:: 与 Word 的 ``.doc`` 等采用富文本格式不同，$\TeX$所采用的是纯文本的文件格式，所以它不依赖特定的文本编辑软件，你完全可以用记事本来写 :math:`\TeX`，甚至你都不需要鼠标.
 
@@ -16,7 +16,7 @@ Donald Knuth 在70年代设计 :math:`\TeX` 开源排版系统的一大初衷就
 
 数学公式的处理对于橘子数学的海量数学试题库来说无疑是至关重要，于是网站采用$\LaTeX$排版系统并自主研发了一个试卷宏包以实现了数学试卷的标准排版( 见 :ref:`bhcexam` )，我们也就需要以 :math:`\TeX` 的方式来录入数学公式. 下面我们将尽可能简单地介绍如何用 :math:`\TeX` 表示数学公式，以求读者能够在10分钟左右的时间里掌握一些常见的用法可以在橘子数学网站上录入一些公式.
 
-.. seealso:: 阅读中译版教程 `《110分钟了解LaTeX》 <https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.01/lshort-zh-cn.pdf>`_ 可以帮助你对 :math:`\LaTeX` 有一个更全面的了解.
+.. seealso:: 阅读中译版教程 `《110分钟了解LaTeX》 <https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.01/lshort-zh-cn.pdf>`_ 可以帮助你对 :math:`\text{\LaTeX}` 有一个更全面的了解.
 
 -------------------------
 两种数学模式
@@ -58,7 +58,7 @@ display mode
 换行与空格
 -------------------------
 
-在 :math:`\LaTeX` 中：
+在 :math:`\text{\LaTeX}` 中：
 
 * 单独一次回车不换行算一次空格，两次及两次以上回车换一行;
 * 连续多个空格、制表符、单独一次回车算一次空格;
@@ -70,7 +70,7 @@ display mode
 特殊字符与转义
 -------------------------
 
-以下字符在 :math:`\LaTeX` 中需要进行转义:
+以下字符在 :math:`\text{\LaTeX}` 中需要进行转义:
 
     # $ % ^ & _ { } ~
 
@@ -91,7 +91,7 @@ Output:
 -------------------------
 
 {ele}^{upper}, {ele}_{lower}
-    在 :math:`\LaTeX` 中用 ``^`` 和 ``_`` 标明上下标。注意上下标的内容(子公式)一般需要用花括号包裹,否则上下标只对后面的一个符号起作用.
+    在 :math:`\text{\LaTeX}` 中用 ``^`` 和 ``_`` 标明上下标。注意上下标的内容(子公式)一般需要用花括号包裹,否则上下标只对后面的一个符号起作用.
 
 Code:
 
