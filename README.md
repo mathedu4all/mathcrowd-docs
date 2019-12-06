@@ -1,6 +1,6 @@
 # Mathcrowd Documentation
 
-[![Documentation Status](https://readthedocs.org/projects/mathcrowd-doc/badge/?version=latest)](https://docs.mathcrowd.cn)
+[![Documentation Status](https://readthedocs.org/projects/mathcrowd-docs/badge/?version=latest)](https://docs.mathcrowd.cn)
 
 
 ## Mathcrowd: an open math database maintained by community
