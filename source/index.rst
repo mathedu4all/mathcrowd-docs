@@ -16,6 +16,17 @@
 
 * 获得高效、定制化的试卷、讲义、错题库解决方案
 
+-----------
+
+* 访问 橘子数学 官方网站: https://www.mathcrowd.cn
+* 访问 橘子数学 的 github 项目: https://github.com/mathedu4all/mathcrowd-community
+* 访问 本文档 的 github 项目: https://github.com/mathedu4all/mathcrowd-docs
+
+-----------
+
+* 橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
+* 橘子数学社区用户 QQ 群: 319701002
+
 .. toctree::
     :caption: 社区
     :name: community
