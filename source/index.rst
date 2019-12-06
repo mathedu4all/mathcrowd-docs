@@ -59,7 +59,7 @@
     :maxdepth: 1
 
     名词解释及一些说明            <misc/declaration>
-    开发日志                     <misc/changelog>
+    项目日志                     <misc/changelog>
 
 ------
 
