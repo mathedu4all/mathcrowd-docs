@@ -23,7 +23,7 @@
 
     社区宗旨        <community/principles>
 
-    加入我们        <community/join_us>
+    参与贡献        <community/to_contribute>
 
 .. toctree::
     :caption: 入门指南

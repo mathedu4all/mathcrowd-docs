@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
+from recommonmark.parser import CommonMarkParser
+
 
 
 # -- Project information -----------------------------------------------------
@@ -30,7 +32,6 @@ author = '橘子数学'
 # ones.
 extensions = [
     "sphinx_rtd_theme",
-    'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -62,3 +63,7 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+source_parsers = {'.md': CommonMarkParser}
+
+source_suffix = ['.rst', '.md']
