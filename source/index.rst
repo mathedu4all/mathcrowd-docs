@@ -26,6 +26,10 @@
 
 * 橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
 * 橘子数学社区用户 QQ 群: 319701002
+* 微信公众号: 橘子数学
+
+    .. image:: https://www.mathcrowd.cn/mobile/img/qrcode.jpg
+        :width: 200px
 
 .. toctree::
     :caption: 社区
