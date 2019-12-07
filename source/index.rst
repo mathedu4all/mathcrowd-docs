@@ -18,7 +18,7 @@
 
 -----------
 
-* 访问 橘子数学 官方网站: https://www.mathcrowd.cn
+* **电脑**访问 橘子数学 官方网站: https://www.mathcrowd.cn
 * 访问 橘子数学 的 github 项目: https://github.com/mathedu4all/mathcrowd-community
 * 访问 本文档 的 github 项目: https://github.com/mathedu4all/mathcrowd-docs
 
