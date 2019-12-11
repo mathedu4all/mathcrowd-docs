@@ -213,10 +213,6 @@ answers
 \\maketitle
     生成试卷头
 
-使用文档了
-
-字体选项
-
 
 题组环境
 ==============
@@ -306,11 +302,11 @@ example:
 
 .. code-block:: tex
 
-    \begin{subquestion}
+    \begin{subquestions}
         \subquestion 第一问
         \subquestion 第二问
         \subquestion 第三问
-    \end{subquestion}
+    \end{subquestions}
 
 命令 \\subquestion
     在小问环境中，新增一个小问.
