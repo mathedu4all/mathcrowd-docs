@@ -18,7 +18,7 @@
 
 -----------
 
-* **电脑**访问 橘子数学 官方网站: https://www.mathcrowd.cn
+* **电脑** 访问 橘子数学 官方网站: https://www.mathcrowd.cn
 * 访问 橘子数学 的 github 项目: https://github.com/mathedu4all/mathcrowd-community
 * 访问 本文档 的 github 项目: https://github.com/mathedu4all/mathcrowd-docs
 
@@ -75,6 +75,14 @@
 
     名词解释及一些说明            <misc/declaration>
     项目日志                     <misc/changelog>
+
+.. toctree::
+    :caption: 经验分享
+    :name: howtos
+    :maxdepth: 1
+
+    如何编译橘子数学的 .tex 文件        <howtos/how_to_compile_mathcrowd_tex>
+    如何安装TeXLive                              <howtos/how_to_install_texlive>
 
 ------
 
