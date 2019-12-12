@@ -18,6 +18,8 @@ Donald Knuth 在70年代设计 :math:`\TeX` 开源排版系统的一大初衷就
 
 .. seealso:: 阅读中译版教程 `《110分钟了解LaTeX》 <https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.01/lshort-zh-cn.pdf>`_ 可以帮助你对 :math:`\LaTeX` 有一个更全面的了解.
 
+.. seealso:: `MathJax basic tutorial and quick reference by StackExchange <https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference>`_
+
 -------------------------
 两种数学模式
 -------------------------
@@ -243,7 +245,7 @@ environment
 
     .. code-block:: latex
 
-        注意 $x \in R$ 与 $x in \mathbf{R}$ 的区别
+        注意 $x \in R$ 与 $x \in \mathbf{R}$ 的区别
 
     Output:
 
@@ -368,9 +370,9 @@ environment
             \log_{10}{x}~\ln{x}~\lg{x}
         \]
 
-        集合关系:
+        其它函数:
         \[
-            \in \quad \notin \quad \subset \quad \supset \quad \subseteq \quad \supseteq \quad \subsetneqq \quad \supsetneqq
+            \max{f(x)} \quad \min{a_n}
         \]
 
     Output:
