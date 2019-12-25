@@ -16,3 +16,4 @@ https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019-201
 ```
 下载完成后，如果你所使用的系统为`win 10`，直接双击打开文件，如果是`win 7`,可以使用[WinCDE](http://wincdemu.sysprogs.org/)挂载工具进行挂载后打开。
 双击`install-tl-windows.bat`既会出现安装界面,下一步即可。
+
