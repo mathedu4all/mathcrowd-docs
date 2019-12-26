@@ -27,7 +27,7 @@
 默认编译器为`pdflatex`，可以在`Tools-Commands`中选择以其他编译器编译当前文档.
 
 <p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_cmd.png" width="600">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_cmd.png" height="500">
 </p>
 
 
