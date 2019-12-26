@@ -27,7 +27,7 @@
 默认编译器为`pdflatex`，可以在`Tools-Commands`中选择以其他编译器编译当前文档.
 
 <p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_cmd.png" width="600">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_cmd.png" height="500">
 </p>
 
 
@@ -53,13 +53,16 @@
 
 ### 修改编译参数
 部分文档编译时需要引用网络图片(`\write18`),需要在编译时加上`-shell-escape`选项。可以在`命令`选项中修改对应编译器参数.
+
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_st_cmd.png" width="600">
+</p>
+
 > 下面为`Overleaf`网站提供的几种编译器的参数说明：
 ```
 https://www.overleaf.com/learn/latex/TeX_engine_command_line_options_for_pdfTeX,_XeTeX_and_LuaTeX
 ```
-<p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_st_cmd.png" width="600">
-</p>
+
 
 ### 其他常用设置部分：
 - `常规`：修改页面样式，字体等
