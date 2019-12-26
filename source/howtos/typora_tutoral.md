@@ -39,8 +39,15 @@ Markdown 原生不太注重图片插入的功能，插入图片的语法为
 
 ## 橘子数学Markdown功能
 在橘子数学试题编辑页面，点击右侧的`分享/导出 - 复制到Markdown编辑器`。打开`Typora`，切换到源代码模式(`Ctrl + /`)，粘贴，切出源代码模式(`Ctrl + /`)既可。
-![导出Markdown](md_ept)
-![导出Markdown](md_pst)
+
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/md_ept.png">
+</p>
+<br>
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/md_pst.png" width="500">
+</p>
+
 
 ## 导出
 `Typora`支持导出多种格式文档，其中原生支持导出`HTML`和`PDF`格式文档，安装`pandoc`控件后还可以导出为`docx`,`tex`,`epub`等多种格式。
