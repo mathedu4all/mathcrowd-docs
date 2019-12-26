@@ -3,19 +3,32 @@
 
 ## 下载安装
 登录[`TeX Studio`官网](https://www.texstudio.org/),点击下载，双击安装即可：
-> 如果点击无反应，可以点击左侧`Download`，选择`Windows`下的`Installer`安装包.
 
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_ist.png" width="600">
+</p>
+
+如果点击无反应，可以点击左侧`Download`，选择`Windows`下的`Installer`安装包.
+
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_ist_2.png" width="600">
+</p>
 
 ## 开始使用
 
 ### 新建文件
 打开`TeX Studio`，点击图中`1`处新建空白文件，在`3`处填入内容，然后点击`2`处的绿色双箭头进行编译(或者按`F5`)，即可看到生成的`PDF`格式文档内容(如图`4`)
 <p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_new_build.png" width="600">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_st_qk.png" width="600">
 </p>
 
-### 切换编译器
-默认编译器为`pdflatex`，可以在`Tools-Commands`中选择以其他编译器编译当前文档
+### 临时切换编译器
+
+默认编译器为`pdflatex`，可以在`Tools-Commands`中选择以其他编译器编译当前文档.
+
+<p align="center">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_cmd.png" width="600">
+</p>
 
 
 ## 简单配置
