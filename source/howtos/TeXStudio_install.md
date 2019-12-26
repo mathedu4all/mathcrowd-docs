@@ -5,13 +5,13 @@
 登录[`TeX Studio`官网](https://www.texstudio.org/),点击下载，双击安装即可：
 
 <p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_ist.png" width="600">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_studio_ist.png" width="300">
 </p>
 
 如果点击无反应，可以点击左侧`Download`，选择`Windows`下的`Installer`安装包.
 
 <p align="center">
-<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_ist_2.png" width="600">
+<img src="https://github.com/yuchengqi9/mathcrowd-docs/blob/yuchengqi9-win_install_tl/source/howtos/images/tex_ist_2.png" width="300">
 </p>
 
 ## 开始使用
