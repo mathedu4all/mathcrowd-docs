@@ -82,7 +82,10 @@
     :maxdepth: 1
 
     如何编译橘子数学的 .tex 文件        <howtos/how_to_compile_mathcrowd_tex>
-    如何安装TeXLive                              <howtos/how_to_install_texlive>
+    如何安装TeXLive                  <howtos/how_to_install_texlive>
+    TeXStudio简易使用指南             <howtos/texstudio_guide>
+    Typora简明使用指南               <howtos/typora_guide>
+
 
 ------
 

@@ -17,7 +17,7 @@ BHCexam 宏包
 
 2019年5月，**BHCexam** 宏包升级到 V1.0, 为了实现更好的兼容性，弃用了 exam 而改用 article 宏包类. 橘子数学网站提供下载组卷的 ``.tex`` 源文件即使用该版本的文档类.
 
-.. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`
+.. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`  
 
 
 ---------
