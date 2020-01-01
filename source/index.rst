@@ -90,6 +90,8 @@
 
     Typora简明使用指南               <howtos/typora_guide>
 
+    Overleaf简明使用指南             <howtos/overleaf_guide>
+
     如何对数学公式编号并引用            <howtos/how_to_number_equation>
 
 ------
