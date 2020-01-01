@@ -50,6 +50,8 @@
 
 * `Typora <https://www.typora.io/>`_: 最像word的 **markdown** 编辑器.
 
+.. seealso:: **经验分享**: :ref:`typora_guide`
+
 * `Markdown Nice <https://mdnice.com/>`_: 优秀的国内开源在线 **markdown** 编辑器.
 
 * `StackEdit <https://stackedit.io/>`_: StackExchange 出品的开源在线 **markdown** 编辑器.
@@ -58,13 +60,15 @@
 
 * `Overleaf <https://www.overleaf.com/>`_: 国外流行的在线 :math:`\TeX` 编辑器，可以实现在线编译.
 
+.. seealso:: **经验分享**: :ref:`overleaf_guide`
+
 * `TeXStudio <https://www.texstudio.org/>`_: 最好用的 :math:`\TeX` ，需要安装 `TeXLive <https://www.tug.org/texlive/>`_ 才能正常编译.
 
 .. warning:: 由橘子数学导出的 :math:`\TeX` 代码中包含大量自定义环境，建议使用 **BHCexam** 宏包进行编译.
 
-相关链接:
+.. seealso:: **经验分享**: :ref:`texstudio`
 
-* :ref:`bhcexam`
+.. seealso:: :ref:`bhcexam`
 
 
 

@@ -19,7 +19,7 @@ Windows
 
 3. 双击安装程序安装.
 
-.. note::
+.. warning::
 
     安装过程中请务必保证良好的网络环境，同时要求硬盘有5G以上的空闲空间.
 
@@ -32,7 +32,7 @@ Windows
 
     :download:`texlive2019.iso<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019.iso>`
 
-2. 下载完整后，建议校验文件的完整性. 即在命令行中运行以下命令，比较返回结果与官方md5是否一致.
+2. 下载完成后，建议校验文件的完整性. 即在命令行中运行以下命令，比较返回结果与官方md5是否一致.
 
     .. code-block:: cmd
 
@@ -51,7 +51,7 @@ Windows
 Mac
 ==========
 
-**Mac** 用户请安装 ``MacTeX`` 发行版本. 在线/离线安装方式于上述大致相同，除了安装程序的文件名改为 ``MacTeX.pkg`` .
+**Mac** 用户请安装 ``MacTeX`` 发行版本. 安装程序的链接如下:
 
     :download:`MacTeX.pkg<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg>`
 
