@@ -77,6 +77,8 @@
 
     项目日志                     <misc/changelog>
 
+    常见错误及解决汇总             <misc/common_error>
+
 .. toctree::
     :caption: 经验分享
     :name: howtos

@@ -17,6 +17,13 @@ BHCexam 宏包
 
 2019年5月，**BHCexam** 宏包升级到 V1.0, 为了实现更好的兼容性，弃用了 exam 而改用 article 宏包类. 橘子数学网站提供下载组卷的 ``.tex`` 源文件即使用该版本的文档类.
 
+2020年1月，**BHCexam** 宏包升级到 V1.1，在征集了用户的反馈后：
+
+    * 新增对A3双栏版式的支持
+    * 新增试题列表样式的选项
+    * 重写了试卷头相关命令
+    * 修复了一些可能导致编译错误的BUG
+
 .. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`  
 
 
@@ -27,7 +34,7 @@ BHCexam 宏包
 获取宏包并安装
 ===================
 
-* 从 GitHub 获取 `最新 BHCexam 宏包 <https://github.com/mathedu4all/bhcexam/releases/v1.0>`_ ： https://github.com/mathedu4all/bhcexam/
+* 从 GitHub 获取 `最新 BHCexam 宏包 <https://github.com/mathedu4all/bhcexam/releases/v1.1>`_ ： https://github.com/mathedu4all/bhcexam/
 
 * 解压 ``bhcexam.zip``
 
@@ -48,9 +55,6 @@ BHCexam 宏包
         \usepackage{hyperref}
 
         \begin{document}
-
-        % 左上角二维码或logo图片
-        \logo{qrcode.png}
 
         % 第一行主标题
         \title{BHCexam试卷排版宏包}
@@ -187,13 +191,16 @@ adobe
 answers
     生成有答案的教师版试卷
 
+twocolumn
+    设置为A3双栏
+
+list
+    以列表格式显示试题(试题编号右对齐且位于试题文本左侧.)
+
 .. note:: 更多字体及字号设置，参考 `ctex 宏包文档 <https://ctan.org/tex-archive/language/chinese/ctex?lang=en>`_ .
 
 试卷头
 ==============
-
-\\logo{%image%}
-    设置试卷头左上方的二维码或logo，%image% 为文件名.
 
 \\title{%title%}
     设置主标题为%title%.
@@ -228,7 +235,7 @@ example:
         ...
     \end{groups}
 
-命令 \\group{%group_name%}{%group_description}
+ \\group{%group_name%}{%group_description}
     在题组环境中新增题组，%group_name%为题组名，%group_description 为题组描述.
 
 
@@ -255,16 +262,16 @@ example:
 可选参数t
     在环境内试题后预留答题空间.
 
-命令 \\question[%score%] %text%
+ \\question[%score%] %text%
     在试题环境中新增试题，可选参数%score为该题的分值.
 
-命令 \\key{%key}
+ \\key{%key}
     在学生版试卷中显示与%key%匹配长度的横线，在教师版试卷中显示答案%key%.
 
-命令 \\fivechoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}{%option 5%}
+ \\fivechoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}{%option 5%}
     显示五个选项.
 
-命令 \\fourchoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}
+ \\fourchoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}
     显示四个选项.
 
 解答环境
@@ -286,13 +293,13 @@ example:
 环境参数
     预留空间的高度.
 
-命令 \\method
+ \\method
     在解答环境中，新增一种解法.
 
-命令 \\methodonly
+ \\methodonly
     在解答环境中，插入唯一的解法.
 
-命令 \\score{%step_score%}{%score_total}
+ \\score{%step_score%}{%score_total}
     在步骤结束时，插入该步骤的分值，%step_score% 为当前步骤的分值，%score_total% 为累计分值.
 
 小问环境
