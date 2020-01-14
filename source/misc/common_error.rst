@@ -1,7 +1,7 @@
 常见错误及解决汇总
 ========================
 
-.. note:: 欢迎在 ` BHCexam 的 Github 项目 <https://github.com/mathedu4all/bhcexam/issues>`_ 上提交 issue 指出宏包中的BUG或提出建议或寻求帮助. 详见 `项目wiki <https://github.com/mathedu4all/bhcexam/wiki>`_ .
+.. note:: 欢迎在 BHCexam 的 Github 项目 <https://github.com/mathedu4all/bhcexam/issues>`_ 上提交 issue 指出宏包中的BUG或提出建议或寻求帮助. 详见 `项目wiki <https://github.com/mathedu4all/bhcexam/wiki>`_ .
 
 
 中文不正常显示
@@ -46,9 +46,9 @@
 
     尽量使用 :math:`\LaTeX` 命令表示特殊符号，如用 ``\in`` 表示属于符号，而非 ``∈`` .
 
-.. seealso:: :ref:`latex_tutorial`
+.. seealso:: **入门指南：** :ref:`latex_tutorial`
 
-.. note:: 使用橘子数学网站线上编译时，支持直接插入带圈数字(如 ``①`` )，但要求其不能出现在数学环境中.
+.. warning:: **关于带圈数字：** 橘子数学网站在线编辑时支持直接插入带圈数字(如 ``①`` )，但要求其不能出现在数学环境中.
 
 显示缺失 ``$``
 ----------------------------------
@@ -65,4 +65,4 @@
 
 * 解决方法：
 
-    在 ``<`` 、 ``>`` 左右添加空格 `` `` 防止转义. 或者在使用 ``\lt`` 、 ``\gt`` 代替.
+    在 ``<`` 、 ``>`` 左右添加 ``空格`` 防止转义. 或者在数学环境中使用 ``\lt`` 、 ``\gt`` 代替.
