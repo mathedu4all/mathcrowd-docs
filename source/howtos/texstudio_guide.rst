@@ -11,8 +11,10 @@ TeXstudio 简易使用指南
 
 .. seealso:: **经验分享:** :ref:`how_to_install_texlive`
 
-下载安装包
-------------
+.. _texstudio_install:
+
+TeXstudio 的安装
+-------------------
 
 访问 `TeXstudio官网 <https://www.texstudio.org/>`_ , 下载操作系统对应的安装包并安装：
 
@@ -21,21 +23,10 @@ TeXstudio 简易使用指南
     :width: 300px
 
 
-开始使用
--------------
+.. _texstudio_config:
 
-
-新建文件&编译
-===================
-
-打开TeXstudio，点击图中 ``1`` 处新建空白文件，在 ``3`` 处填入内容，然后点击 ``2`` 处的绿色双箭头进行编译(或者按 ``F5`` )，即可看到生成的PDF格式文档内容(如 ``4`` 处).
-
-.. image:: ../_static/tex_st_qk.png
-    :width: 600px
-
-
-简单配置
-=============
+TeXstudio 的配置
+-------------------
 
 
 * 依次点击 ``Options->Configure->TeXStudio`` ，进入TeXstudio的配置页面.
@@ -50,22 +41,16 @@ TeXstudio 简易使用指南
 .. image:: ../_static/tex_st_build.png
     :width: 600px
 
+.. _texstudio_usage:
 
-* 点击 ``命令`` ，编辑编译命令的参数.
+TeXstudio 的使用
+-------------------
 
-.. note:: 若编译从橘子数学网站下载的 `.tex` 文件,需在 ``xelatex`` 命令里添加参数 ``--shell-escape`` 以支持调用外部命令. 
-.. seealso:: **进阶指南:** :ref:`how_to_compile_mathcrowd_tex`
+打开TeXstudio，点击图中 ``1`` 处新建空白文件，在 ``3`` 处填入内容，然后点击 ``2`` 处的绿色双箭头进行编译(或者按 ``F5`` )，即可看到生成的PDF格式文档内容(如 ``4`` 处).
 
-.. image:: ../_static/tex_st_cmd.png
+.. image:: ../_static/tex_st_qk.png
     :width: 600px
 
-* 你可能需要的其他设置：
-
-    * `常规`：修改页面样式，字体等
-    * `快捷键`：为常用指令设置快捷键
-    * `编辑器`：设置文本编辑窗口的字体，字号等
-    * `语法高亮`：设置关键字高亮
-    * `预览`：设置内部`PDF`预览页面
 
 更多
 -----------

@@ -1,7 +1,30 @@
+.. _common_error:
+
 常见错误及解决汇总
 ========================
 
-.. note:: 欢迎在 BHCexam 的 Github 项目 <https://github.com/mathedu4all/bhcexam/issues>`_ 上提交 issue 指出宏包中的BUG或提出建议或寻求帮助. 详见 `项目wiki <https://github.com/mathedu4all/bhcexam/wiki>`_ .
+.. note:: 欢迎在 BHCexam 的 `Github 项目 <https://github.com/mathedu4all/bhcexam/issues>`_ 上提交 issue 指出宏包中的BUG或提出建议或寻求帮助. 详见 `项目wiki <https://github.com/mathedu4all/bhcexam/wiki>`_ .
+
+字体缺失
+-----------------
+
+* 错误描述：
+
+    本地编译显示字体缺失错误.
+
+    .. image:: ../_static/font_error.jpg
+
+* 原因分析：
+
+    宏包默认使用Adobe字体.
+
+* 解决方法：
+
+    在宏包选项中修改默认字体(见 :ref:`bhcexam_option` ).
+
+    .. code-block:: latex
+
+        \documentclass[windows]{BHCexam}
 
 
 中文不正常显示

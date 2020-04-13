@@ -55,13 +55,9 @@ Overleaf_ 中的项目相当于本地的文件夹,一个项目相当于一个文
 
 在编辑区中输入 ``\`` 可以发现 ``Overleaf`` 提供了丰富的代码提示功能,对于新人有很大的帮助.
 
-.. hint:: Overleaf 后台服务器中使用的是 **TeXLive 2018**,所以编辑 橘子数学_ 网站提供的 ``tex`` 文件时需要在 ``侧边栏`` 上传最新的宏包 :ref:`BHCexam <bhcexam>` 文件到当前项目.
-.. hint:: **Overleaf** 不支持加载网路图片( `wget` 方法加载的图片),所以从 橘子数学_ 下载的试卷中若有图片网址,建议手动下载后上传到当前项目下.
 
 .. seealso:: **进阶指南:** :ref:`bhcexam`
 .. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`
-
-.. _橘子数学: http://www.mathcrowd.cn
 
 
 插入本地图片
@@ -81,6 +77,18 @@ Overleaf_ 中的项目相当于本地的文件夹,一个项目相当于一个文
 
 点击页面左上角的 Overleaf_ 图标,可以对 Overleaf_ 进行设置,部分功能属于收费功能.
 
-
-
 .. _Overleaf: https://cn.overleaf.com
+
+
+Overleaf 认证模板
+============================
+
+目前 Bhexam 宏包已作为overleaf的官方认证模板之一, overleaf的用户只需点击 ``open as Template``，即可在试卷样例的基础上进行修改.
+
+模板地址: https://www.overleaf.com/latex/templates/bhcexam/kctdsdcgzyzm
+
+.. image:: ../_static/overleaf_bhcexam1.png
+    :width: 600px
+
+.. image:: ../_static/overleaf_bhcexam2.png
+    :width: 600px

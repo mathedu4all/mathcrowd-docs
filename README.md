@@ -23,7 +23,7 @@ This is an official documentation of Mathcrowd ( chinese: ''橘子数学')，inc
 
 * Some user-contributed how-tos on customization;
 
-* Changelog and other informations. 
+* Changelog and other information. 
 
 ## Contribute to this documentation
 
@@ -33,7 +33,7 @@ read [wiki](https://github.com/mathedu4all/mathcrowd-docs/wiki)
 
 This documentation is license under Apache License, Version 2.0.
 
-> Copyright (c) 2009-2019 The Mathcrowd Inc.
+> Copyright (c) 2009-2020 The Mathcrowd Inc.
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this file except in compliance with the License.

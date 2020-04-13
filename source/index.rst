@@ -40,6 +40,11 @@
 
     参与贡献        <community/to_contribute>
 
+    获取权限        <community/apply_role>
+
+    试题任务        <community/take_mission>
+
+
 .. toctree::
     :caption: 入门指南
     :name: basics
@@ -95,6 +100,8 @@
     Overleaf简明使用指南             <howtos/overleaf_guide>
 
     如何对数学公式编号并引用            <howtos/how_to_number_equation>
+
+    如何在社区分享你的原创精品内容           <howtos/how_to_share_math>
 
 ------
 

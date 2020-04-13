@@ -10,48 +10,93 @@ BHCexam 宏包
 
 **BHCexam** 宏包是一个用于排版数学试卷的 :math:`\LaTeX` 文档类. 宏包由橘子数学社区创始人 橘子老君 开发并维护.
 
-2011年7月，刚刚参加中学教学工作的橘子老君，以 exam 宏包为底层文档类，在盖鹤麟开发的colin宏包基础上，增加了对 XeLaTeX 的支持，发布了最初版本的 **BHCexam** 宏包.
+2011年7月，刚刚参加中学教学工作的橘子老君，以 exam 宏包为底层文档类，在盖鹤麟开发的 colinexam 宏包基础上，增加了对 XeLaTeX 的支持，发布了最初版本的 **BHCexam** 宏包.
 
 在实际教学工作中，橘子老君发现如果没有一个 :math:`\LaTeX` 试题数据库，那么用 :math:`\LaTeX` 排版试卷无疑事倍功半. 也就有了橘子数学社区.
 
+2019年5月起，`橘子数学共享试题社区网站 <https://www.mathcrowd.cn>`_ 上线，网站提供的试卷均由 BHCexam 排版且提供源码下载.
 
-2019年5月，**BHCexam** 宏包升级到 V1.0, 为了实现更好的兼容性，弃用了 exam 而改用 article 宏包类. 橘子数学网站提供下载组卷的 ``.tex`` 源文件即使用该版本的文档类.
+.. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`
 
-2020年1月，**BHCexam** 宏包升级到 V1.1，在征集了用户的反馈后：
+------------
+版本历史
+------------
 
+
+* 2019年5月，v1.0:
+    * 弃用 ``exam`` 而改用 ``article`` 为基宏包类
+
+* 2020年1月, v1.1：
     * 新增对A3双栏版式的支持
-    * 新增试题列表样式的选项
-    * 重写了试卷头相关命令
-    * 修复了一些可能导致编译错误的BUG
+    * 新增列表样式的试题
 
-.. seealso:: **经验分享:** :ref:`how_to_compile_mathcrowd_tex`  
+* 2020年3月，v1.2：
+    * 支持苹果字体
+    * 使用 ``stix`` 数学字体
+    * ``\parallel`` 命令优化
+    * 支持在选择题最后显示右对齐括号
+
+* 2020年3月, v1.3:
+    * 新增 ``\sixchoices`` , ``\threechoices`` 命令，已增加对3个和6个选项的支持，智能断行同时保持选项对齐
+
 
 
 ---------
 入门
 ---------
 
+软件需求
+===================
+
+* 安装TeX软件发行套装，如 ``texlive 2019``.
+
+.. seealso:: **经验分享** :ref:`how_to_install_texlive`
+
+* 安装 LaTeX 编辑器，如 ``TexStudio``.
+
+.. seealso:: **经验分享** :ref:`texstudio_install`
+
+
 获取宏包并安装
 ===================
 
-* 从 GitHub 获取 `最新 BHCexam 宏包 <https://github.com/mathedu4all/bhcexam/releases/v1.1>`_ ： https://github.com/mathedu4all/bhcexam/
+* 从 GitHub 获取 `最新 BHCexam 宏包 <https://github.com/mathedu4all/bhcexam/releases/v1.3>`_ ： https://github.com/mathedu4all/bhcexam/
 
 * 解压 ``bhcexam.zip``
 
-* 复制 ``BHCexam.cls`` 到 texmf 文件夹或与要编译的 ``.tex`` 同一个文件夹.
+.. code-block:: bash
 
+    # unzip bhcexam.zip
+    .
+    ├── BHCexam.cls
+    ├── examples
+    │   ├── BHCexam.cls
+    │   ├── example.pdf
+    │   ├── example.tex
+    │   ├── F7UJfg6iYCiCefLftREhksYit6NP46Of.png
+    │   ├── lRyWbWTAbMoaIHdzGNbnHtHNwMC1OqLS.png
+    │   ├── naive.pdf
+    │   ├── naive.tex
+    │   ├── qrcode.png
+    │   ├── rOqrX8AOkhQtAGTSvgdyU0mzeH3pIfTp.png
+    │   └── sSFh6W64bKcV715x2rYUVGCnqVea4NCO.png
+    └── README.md
+
+* 复制 ``BHCexam.cls`` 到 texmf 文件夹或与要编译的 ``.tex`` 同一个文件夹
+
+* 设置LaTeX编辑器的编译器为 ``xelatex``
+
+.. seealso:: **经验分享** :ref:`texstudio_config`
 
 一个简单的例子
 ==============
 
-以下示例的源文件 ``fun.tex`` 已包含在 ``bhcexam.zip`` 内.
+以下示例的源文件 ``naive.tex`` 已包含在 ``bhcexam.zip`` 内的 ``examples`` 文件夹中.
 
     .. code-block:: tex
 
         % 使用 BHCexam 文档类，并传递选项
-        \documentclass[a4paper,answers]{BHCexam}
-
-        % 使用 hyperref 宏包，以支持显示链接.
+        \documentclass[answers]{BHCexam}
         \usepackage{hyperref}
 
         \begin{document}
@@ -59,7 +104,7 @@ BHCexam 宏包
         % 第一行主标题
         \title{BHCexam试卷排版宏包}
 
-        % 第二行副标题
+        % 第二行主标题
         \subtitle{样例}
 
         % 考试说明
@@ -87,7 +132,7 @@ BHCexam 宏包
 
         % 第二个题组，显示分值，不预留空间
         \group{选择}{本题组共2小题，共40.0分}
-        \begin{questions}[s]
+        \begin{questions}[ps]
 
         % 选择题，四个选项
         \question[30] 以下哪一项不是橘子数学社区的宗旨\key{C}.
@@ -95,7 +140,6 @@ BHCexam 宏包
 
         % 解答，4cm 参数被忽略
         \begin{solution}{4cm}
-        % 两种解法
         \method 橘子数学社区的宗旨是开放、高效、合作、变革.
         \method 见 \url{http://docs.mathcrowd.cn/zh_CN/latest/community/principles.html}
         \end{solution}
@@ -104,19 +148,14 @@ BHCexam 宏包
         \question[40] 以下数学公式显示有明显瑕疵的是\key{D}.
         \fivechoices{$\sin A$}{$2+3\mathrm{i}$}{$x^2$}{$\ln x$}{$\mathrm{e}^{\mathrm{i}\theta}$}
 
-        % 解答，4cm 参数被忽略
         \begin{solution}{4cm}
-        % 只有一种解法
         \methodonly D 中正确的公式显示效果为$\ln{x}$.
-
-        更多公式排版的注意事项见 \url{http://docs.mathcrowd.cn/zh_CN/latest/basics/mathjax_basics.html}
         \end{solution}
         \end{questions}
 
         % 第三个题组，显示分值，预留空间
         \group{主观题}{本题组共1小题，共30.0分}
         \begin{questions}[st]
-
         % 简答题，两个小问
         \question[30] 请回答以下问题：
         \begin{subquestions}
@@ -126,19 +165,15 @@ BHCexam 宏包
 
         % 解答，学生版会预留8cm的答题空间.
         \begin{solution}{8cm}
-        % 只有一种解法
-        \methodonly 欢迎加入用户群组发言讨论.
+            \methodonly 欢迎加入用户群组发言讨论.
 
-        橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
+        telegram 交流群组: https://t.me/mathcrowd
 
-        橘子数学社区用户 QQ 群: 319701002
+        QQ 群: 319701002
 
-        % 显示上述步骤的分值.
-        \score{15}{15}
+        Github项目页: \url{https://github.com/mathedu4all/mathcrowd-community/wiki}
 
-        对网站开发和社区运作提出建议: \url{https://github.com/mathedu4all/mathcrowd-community/wiki}
-
-        \score{15}{30}
+        \score{30}{30}
 
         \end{solution}
         \end{questions}
@@ -146,15 +181,10 @@ BHCexam 宏包
         \end{groups}
         \end{document}
 
-建议安装 TeXLive 2019 套件，并使用 xelatex 编译文档，编译命令如下：
+使用 xelatex 编译即可.
 
-    .. code-block:: bash
+.. seealso:: **经验分享:** :ref:`texstudio_usage`
 
-        xelatex fun.tex
-
-.. seealso:: **经验分享:** :ref:`how_to_install_texlive`
-
-.. seealso:: 加上 ``answers`` 宏包选项后编译，可生成教师版试卷，见 :ref:`bhcexam_option` .
 
 -------------
 宏包说明
@@ -187,6 +217,9 @@ ubuntu
 
 adobe
     使用adobe的默认字体
+
+mac
+    使用mac的默认字体
 
 answers
     生成有答案的教师版试卷
@@ -262,8 +295,17 @@ example:
 可选参数t
     在环境内试题后预留答题空间.
 
+可选参数p
+    在选择题后增加右对齐的括号.
+
  \\question[%score%] %text%
     在试题环境中新增试题，可选参数%score为该题的分值.
+
+ \\example %text%
+    在试题环境中新增一道例题.
+
+ \\exercise %text%
+    在试题环境中新增一道习题.
 
  \\key{%key}
     在学生版试卷中显示与%key%匹配长度的横线，在教师版试卷中显示答案%key%.
@@ -273,6 +315,14 @@ example:
 
  \\fourchoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}
     显示四个选项.
+
+ \\threechoices{%option 1%}{%option 2%}{%option 3%}
+    显示三个选项.
+
+ \\sixchoices{%option 1%}{%option 2%}{%option 3%}{%option 4%}{%option 5%}{%option 6%}
+    显示六个选项.
+
+
 
 解答环境
 ===============
