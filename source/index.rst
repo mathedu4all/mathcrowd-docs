@@ -75,26 +75,28 @@
 
     名词解释及一些说明            <misc/declaration>
 
-    项目日志                     <misc/changelog>
+    项目日志                    <misc/changelog>
 
-    常见错误及解决汇总             <misc/common_error>
+    常见错误及解决汇总            <misc/common_error>
 
 .. toctree::
     :caption: 经验分享
     :name: howtos
     :maxdepth: 1
 
-    如何编译橘子数学的 .tex 文件        <howtos/how_to_compile_mathcrowd_tex>
+    如何编译橘子数学的 .tex 文件               <howtos/how_to_compile_mathcrowd_tex>
 
-    如何安装TeXLive                  <howtos/how_to_install_texlive>
+    如何如何将 word 文件中的内容导入到试题库     <howtos/how_to_import_from_word>
 
-    TeXStudio简易使用指南             <howtos/texstudio_guide>
+    如何安装TeXLive                         <howtos/how_to_install_texlive>
 
-    Typora简明使用指南               <howtos/typora_guide>
+    TeXStudio简易使用指南                    <howtos/texstudio_guide>
 
-    Overleaf简明使用指南             <howtos/overleaf_guide>
+    Typora简明使用指南                       <howtos/typora_guide>
 
-    如何对数学公式编号并引用            <howtos/how_to_number_equation>
+    Overleaf简明使用指南                     <howtos/overleaf_guide>
+
+    如何对数学公式编号并引用                   <howtos/how_to_number_equation>
 
 ------
 
