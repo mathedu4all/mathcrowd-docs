@@ -249,7 +249,7 @@ environment
 
     Output:
 
-        注意 :math:`x \in R` 与 :math:`x in \mathbf{R}` 的区别
+        注意 :math:`x \in R` 与 :math:`x \in \mathbf{R}` 的区别
 
 -------------------------
 常用公式示例
