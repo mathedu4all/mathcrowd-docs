@@ -105,6 +105,8 @@
 
     如何在社区分享你的原创精品内容           <howtos/how_to_share_math>
 
+    如何使用Github进行协作编辑                <howtos/how_to_use_github>
+
 ------
 
 .. image:: https://img.shields.io/badge/powered%20by-mathcrowd-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
