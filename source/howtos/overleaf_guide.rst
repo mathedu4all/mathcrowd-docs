@@ -83,7 +83,7 @@ Overleaf_ 中的项目相当于本地的文件夹,一个项目相当于一个文
 Overleaf 认证模板
 ============================
 
-目前 Bhexam 宏包已作为overleaf的官方认证模板之一, overleaf的用户只需点击 ``open as Template``，即可在试卷样例的基础上进行修改.
+目前 BHCexam 宏包已作为overleaf的官方认证模板之一, overleaf的用户只需点击 ``open as Template``，即可在试卷样例的基础上进行修改.
 
 模板地址: https://www.overleaf.com/latex/templates/bhcexam/kctdsdcgzyzm
 

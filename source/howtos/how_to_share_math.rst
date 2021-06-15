@@ -77,3 +77,4 @@ Step5: 向社区投稿
 
     .. image:: ../_static/zhihu.png
         :width: 600px
+

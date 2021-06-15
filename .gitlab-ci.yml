@@ -1,0 +1,8 @@
+build:
+  tags: [build]
+  script:
+    - docker-compose build
+    - docker-compose push
+    - docker-compose up
+    - chmod 400 $SSH_RSA
+    - rsync -Pav -e "ssh -i $SSH_RSA" build/ root@www.mathcrowd.cn:/var/www/sphinx

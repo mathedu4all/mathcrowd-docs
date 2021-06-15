@@ -39,6 +39,16 @@ BHCexam 宏包
 * 2020年3月, v1.3:
     * 新增 ``\sixchoices`` , ``\threechoices`` 命令，已增加对3个和6个选项的支持，智能断行同时保持选项对齐
 
+* 2020年5月, v1.4:
+    * 支持 ``subquestion`` 环境的嵌套;
+    * ``\parallel`` 命令重定义;
+
+* 2020年6月, v1.5:
+    * ``questions`` 环境新增 ``r`` 选项，重置题组的编号;
+    * 在 ``master`` 分支中清理历史版本;
+    * 新增 ``fandol`` 宏包选项以支持 ``fandol`` 字体;
+
+
 
 
 ---------
@@ -218,6 +228,9 @@ ubuntu
 adobe
     使用adobe的默认字体
 
+fandol
+    使用fandol开源字体，texlive默认安装
+
 mac
     使用mac的默认字体
 
@@ -289,6 +302,9 @@ example:
         ...
     \end{questions}
 
+可选参数r
+    设置题号从1开始.
+
 可选参数s
     显示环境内试题的分值.
 
@@ -297,6 +313,9 @@ example:
 
 可选参数p
     在选择题后增加右对齐的括号.
+
+可选参数r
+    试题重新从1开始编号.
 
  \\question[%score%] %text%
     在试题环境中新增试题，可选参数%score为该题的分值.

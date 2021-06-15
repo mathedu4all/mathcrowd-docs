@@ -14,7 +14,7 @@
 关注并Fork项目
 ---------------------------
 
-访问 mathcrowd-community 项目页，从左到右，点击 ``Watch`` 关注项目， 点击 ``Star`` 收藏项目, 点击 ``Fork`` 生成该项目的副本.
+访问 `mathcrowd-community <https://github.com/mathedu4all/mathcrowd-community>`_ 项目页，从左到右，点击 ``Watch`` 关注项目， 点击 ``Star`` 收藏项目, 点击 ``Fork`` 生成该项目的副本.
 
 .. image:: ../_static/fork.png
     :width: 600px
@@ -69,7 +69,7 @@
 .. image:: ../_static/github_pull_request.png
     :width: 600px
 
-在确认发生变化的文件后，点击 `` Create pull request ``， 提交合并请求.
+在确认发生变化的文件后，点击 ``Create pull request`` ， 提交合并请求.
 
 .. image:: ../_static/git_pull_request_confirm.png
     :width: 600px
@@ -77,7 +77,7 @@
 如何在Github上进行讨论
 ----------------------------
 
-当确定方程与代数板块下的三级及以下知识点后，你希望听取其他用户的意见建议. 此时可以把相关内容复制到主项目 Issues 区中的相关 Issue, 与其他用户进行留言互动.
+当确定方程与代数板块下的三级及以下知识点后，你希望听取其他用户的意见建议. 此时可以把相关内容复制到主项目 `Issues 区 <https://github.com/mathedu4all/mathcrowd-community/issues>`_ 中的相关 Issue, 与其他用户进行留言互动.
 
 
 .. image:: ../_static/github_issues.png

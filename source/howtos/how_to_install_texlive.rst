@@ -30,7 +30,7 @@ Windows
 
 1. 在网络环境良好的机器上下载ISO镜像文件.
 
-    :download:`texlive2019.iso<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019.iso>`
+    :download:`texlive2019.iso<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2020.iso>`
 
 2. 下载完成后，建议校验文件的完整性. 即在命令行中运行以下命令，比较返回结果与官方md5是否一致.
 
@@ -39,7 +39,7 @@ Windows
         cd {iso文件所在的目录}
         certutil -hashfile texlive2019.iso MD5
 
-    :download:`官方md5<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019.md5>`
+    :download:`官方md5<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2020.md5>`
 
 3. 将ISO镜像文件复制到目标机器上，双击ISO文件加载镜像(win10以上，win7需额外安装虚拟光驱软件）.
 

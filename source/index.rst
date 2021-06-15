@@ -12,23 +12,42 @@
 
 * 发布、分享数学试题内容
 
-* 关注你喜欢的原创试题作者
-
 * 获得高效、定制化的试卷、讲义、错题库解决方案
+
+* 发布、参与数学趣题挑战 (**New**)
+
+* 关注你感兴趣的趣题频道、标签 (**New**)
+
+* 与数学爱好者针对趣题进行互动评论交流 (**New**)
 
 -----------
 
 * **电脑** 访问 橘子数学 官方网站: https://www.mathcrowd.cn
-* 访问 橘子数学 的 github 项目: https://github.com/mathedu4all/mathcrowd-community
 * 访问 本文档 的 github 项目: https://github.com/mathedu4all/mathcrowd-docs
 
 -----------
 
 * 橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
-* 橘子数学社区用户 QQ 群: 319701002
+* 橘子数学社区LaTeX用户 QQ 群: 319701002
+* 橘子数学社区Word用户 QQ 群: 106717022
 * 微信公众号: 橘子数学
 
     .. image:: https://www.mathcrowd.cn/mobile/img/qrcode.jpg
+        :width: 200px
+
+* 橘子数学社区用户微信群
+
+    .. image:: https://api.mathcrowd.cn/static/tex_user.jpg
+        :width: 200px
+
+* 橘子数学社区STEAM项目化学习微信群
+
+    .. image:: https://api.mathcrowd.cn/static/pbl_math.jpg
+        :width: 200px
+
+* 橘子数学社区趣味数学讨论微信群
+
+    .. image:: https://api.mathcrowd.cn/static/math_games.jpg
         :width: 200px
 
 .. toctree::
@@ -43,6 +62,14 @@
     获取权限        <community/apply_role>
 
     试题任务        <community/take_mission>
+
+    关于贡献值      <community/about_contribution>
+
+    关于捐助        <community/about_donation>
+
+    关于邀请        <Community/about_invitation>
+
+    版权许可协议     <community/about_licences>
 
 
 .. toctree::
@@ -91,7 +118,11 @@
 
     如何编译橘子数学的 .tex 文件               <howtos/how_to_compile_mathcrowd_tex>
 
-    如何如何将 word 文件中的内容导入到试题库     <howtos/how_to_import_from_word>
+    如何一键导出试题到微信公众号            <howtos/how_to_export_problem>
+
+    如何将Word/PDF文件中的内容转为LaTeX     <howtos/how_to_import_from_word>
+
+    如何修复在微信暗黑模式下的长数学公式    <howtos/how_to_fix_math_svg_in_mp_editor>
 
     如何安装TeXLive                         <howtos/how_to_install_texlive>
 
@@ -107,12 +138,15 @@
 
     如何使用Github进行协作编辑                <howtos/how_to_use_github>
 
+    手机微信登录排错指南                    <howtos/how_to_refresh_cache_in_wechat>
+
+    如何在橘子数学题库录入试题？              <howtos/how_to_create_problem_in_database>
+
 ------
 
 .. image:: https://img.shields.io/badge/powered%20by-mathcrowd-orange.svg?style=flat&amp;colorA=E1523D&amp;colorB=007D8A
    :alt: powered-by NumFocus
    :target: http://www.mathcrowd.cn
-
 
 
 ------

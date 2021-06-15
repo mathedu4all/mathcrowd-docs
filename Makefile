@@ -7,18 +7,11 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
-BACKUPDIR     = /mnt/nfs2/MyProjects
 BASEDIR		  = $(CURDIR)
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-backup: html
-	rsync -av $(BASEDIR) $(BACKUPDIR)
-
-remote: backup
-	rsync -av --delete --chown=www-data:www-data $(BUILDDIR)/html/ root@api.mathcrowd.cn:/var/www/sphinx/
 
 .PHONY: help Makefile
 

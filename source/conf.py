@@ -13,15 +13,11 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_rtd_theme
-from recommonmark.parser import CommonMarkParser
-
-
 
 # -- Project information -----------------------------------------------------
 
 project = 'mathcrowd-docs'
-copyright = '2019, 橘子数学'
+copyright = '2016-2021, 橘子数学'
 author = '橘子数学'
 
 
@@ -32,7 +28,15 @@ author = '橘子数学'
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    "recommonmark",
 ]
+
+html_context = {
+  'display_github': True,
+  'github_user': 'mathedu4all',
+  'github_repo': 'mathcrowd-docs',
+  'github_version': 'master/source/',
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -63,7 +67,3 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 
 master_doc = 'index'
-
-source_parsers = {'.md': CommonMarkParser}
-
-source_suffix = ['.rst', '.md']

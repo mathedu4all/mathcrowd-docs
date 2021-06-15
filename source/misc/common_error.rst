@@ -5,6 +5,24 @@
 
 .. note:: 欢迎在 BHCexam 的 `Github 项目 <https://github.com/mathedu4all/bhcexam/issues>`_ 上提交 issue 指出宏包中的BUG或提出建议或寻求帮助. 详见 `项目wiki <https://github.com/mathedu4all/bhcexam/wiki>`_ .
 
+含有下划线
+----------------------
+
+* 错误描述:
+
+    网页预览正常，提交后提示缺 ``$`` .
+
+    .. image:: ../_static/underline_error.png
+
+* 原因分析:
+
+    ``_`` 被误认为下标.
+
+* 解决方法:
+
+    将 ``____`` 替换为 ``\underline{\qquad}`` .
+
+
 字体缺失
 -----------------
 
