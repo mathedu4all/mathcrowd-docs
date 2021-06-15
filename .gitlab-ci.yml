@@ -5,4 +5,5 @@ build:
     - docker-compose push
     - docker-compose up
     - chmod 400 $SSH_RSA
+    - git push github master
     - rsync --delete -Pav -e "ssh -i $SSH_RSA" /opt/mathcrowd-docs/html/ root@www.mathcrowd.cn:/var/www/sphinx
