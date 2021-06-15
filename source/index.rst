@@ -21,35 +21,62 @@
 
 -----------
 
-* **电脑** 访问 橘子数学 官方网站: https://www.mathcrowd.cn
-* 访问 本文档 的 github 项目: https://github.com/mathedu4all/mathcrowd-docs
+* **电脑** 访问橘子数学官方网站: https://www.mathcrowd.cn
+
+* **手机** 访问橘子题库微信小程序:
+
+.. image:: ./_static/qr/qr2.jpg
+    :width: 200px
+    :align: center
 
 -----------
+
+.. |qr1| image:: ./_static/qr/qr1.jpg
+        :width: 200px
+
+.. |qr3| image:: ./_static/qr/qr3.jpg
+        :width: 200px
+
+.. |qr4| image:: ./_static/qr/qr4.jpg
+        :width: 200px
+
+.. list-table:: 社区自媒体
+   :widths: 33 33 33
+   :header-rows: 1
+
+   * - |qr1|
+     - |qr4|
+     - |qr3|
+
+   * - 微信服务号: 橘子数学
+     - 微信订阅号: 试题工坊
+     - 微信视频号: 橘子数学
+
+
+.. |qr5| image:: ./_static/qr/tex_user.jpg
+        :width: 200px
+
+.. |qr6| image:: ./_static/qr/pbl_math.jpg
+        :width: 200px
+
+.. |qr7| image:: ./_static/qr/math_games.jpg
+        :width: 200px
+
+.. list-table:: 社群群聊
+   :widths: 33 33 33
+   :header-rows: 1
+
+   * - |qr5|
+     - |qr6|
+     - |qr7|
+
+   * - 开源题库群
+     - STEAM项目化学习群
+     - 趣味数学讨论微信群
 
 * 橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
 * 橘子数学社区LaTeX用户 QQ 群: 319701002
 * 橘子数学社区Word用户 QQ 群: 106717022
-
-
-* 微信公众号: 橘子数学
-
-    .. image:: https://www.mathcrowd.cn/mobile/img/qrcode.jpg
-        :width: 200px
-
-* 橘子数学社区用户微信群
-
-    .. image:: https://api.mathcrowd.cn/static/tex_user.jpg
-        :width: 200px
-
-* 橘子数学社区STEAM项目化学习微信群
-
-    .. image:: https://api.mathcrowd.cn/static/pbl_math.jpg
-        :width: 200px
-
-* 橘子数学社区趣味数学讨论微信群
-
-    .. image:: https://api.mathcrowd.cn/static/math_games.jpg
-        :width: 200px
 
 .. toctree::
     :caption: 社区
@@ -68,7 +95,7 @@
 
     关于捐助        <community/about_donation>
 
-    关于邀请        <Community/about_invitation>
+    关于邀请        <community/about_invitation>
 
     版权许可协议     <community/about_licences>
 
@@ -117,15 +144,15 @@
     :name: howtos
     :maxdepth: 1
 
-    如何编译橘子数学的 .tex 文件               <howtos/how_to_compile_mathcrowd_tex>
+    如何编译橘子数学的 .tex 文件                 <howtos/how_to_compile_mathcrowd_tex>
 
-    如何一键导出试题到微信公众号            <howtos/how_to_export_problem>
+    如何一键导出试题到微信公众号                  <howtos/how_to_export_problem>
 
-    如何将Word/PDF文件中的内容转为LaTeX     <howtos/how_to_import_from_word>
+    如何将Word/PDF文件中的内容转为LaTeX          <howtos/how_to_import_from_word>
 
-    如何修复在微信暗黑模式下的长数学公式    <howtos/how_to_fix_math_svg_in_mp_editor>
+    如何修复在微信暗黑模式下的长数学公式            <howtos/how_to_fix_math_svg_in_mp_editor>
 
-    如何安装TeXLive                         <howtos/how_to_install_texlive>
+    如何安装TeXLive                            <howtos/how_to_install_texlive>
 
     TeXStudio简易使用指南                    <howtos/texstudio_guide>
 

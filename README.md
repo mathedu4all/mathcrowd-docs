@@ -15,7 +15,7 @@ Visit our Official website: https://www.mathcrowd.cn
 
 This is an official documentation of Mathcrowd ( chinese: ''橘子数学')，including:
 
-* The introduction of the project and ;
+* The introduction of the project;
 
 * The tutorial of mathcrowd.cn database and user interface;
 
@@ -28,6 +28,11 @@ This is an official documentation of Mathcrowd ( chinese: ''橘子数学')，inc
 ## Contribute to this documentation
 
 read [wiki](https://github.com/mathedu4all/mathcrowd-docs/wiki) 
+
+## Reference
+
+* [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html)
+* [Create Documentation with RST, Sphinx, Sublime, and GitHub](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)
 
 ## License
 
