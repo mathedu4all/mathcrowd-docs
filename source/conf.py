@@ -28,7 +28,6 @@ author = '橘子数学'
 # ones.
 extensions = [
     "sphinx_rtd_theme",
-    "recommonmark",
 ]
 
 html_context = {
