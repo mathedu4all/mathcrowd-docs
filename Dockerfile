@@ -16,7 +16,7 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 WORKDIR /opt
 
-COPY . /opt
+COPY requirements.txt /opt
 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  -r /opt/requirements.txt
 
