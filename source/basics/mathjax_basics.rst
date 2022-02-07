@@ -194,7 +194,7 @@ environment
 
         分段函数:
         \[f(x)=\begin{cases}
-            1 & x\in \mathbf{Q}
+            1 & x\in \mathbf{Q} \\
             0 & x\notin \mathbf{Q}
         \end{cases}\]
 
@@ -204,7 +204,7 @@ environment
 
     .. math::
         f(x)=\begin{cases}
-            1 & x\in \mathbf{Q}\\
+            1 & x\in \mathbf{Q} \\
             0 & x\notin \mathbf{Q}
         \end{cases}
 
