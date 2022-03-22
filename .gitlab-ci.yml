@@ -1,8 +1,14 @@
+image: python:latest
+stages:
+  - build
+
 build:
-  tags: [build]
+  stage: build
   script:
-    - docker-compose build
-    - docker-compose push
-    - docker-compose up
+    - pip install -r requirements.txt 
+    - make html
     - chmod 400 $SSH_RSA
-    - rsync --delete -Pav -e "ssh -i $SSH_RSA" /opt/mathcrowd-docs/html/ root@www.mathcrowd.cn:/var/www/sphinx
+    - rsync --delete -Pav -e "ssh -i $SSH_RSA" ./build/html/ root@www.mathcrowd.cn:/var/www/sphinx
+  artifacts:
+    paths:
+      - build
