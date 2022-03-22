@@ -5,9 +5,13 @@ stages:
 build:
   stage: build
   script:
-    - pip install -r requirements.txt 
+    - sed -i 's#http://deb.debian.org#https://mirrors.tuna.tsinghua.edu.cn#g' /etc/apt/sources.list
+    - apt update && apt install -y rsync
+    - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt 
     - make html
     - chmod 400 $SSH_RSA
+    - mkdir ~/.ssh
+    - ssh-keyscan -t rsa www.mathcrowd.cn >> ~/.ssh/known_hosts
     - rsync --delete -Pav -e "ssh -i $SSH_RSA" ./build/html/ root@www.mathcrowd.cn:/var/www/sphinx
   artifacts:
     paths:
