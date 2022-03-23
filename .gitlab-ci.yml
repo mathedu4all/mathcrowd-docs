@@ -12,7 +12,7 @@ build:
     - chmod 400 $SSH_RSA
     - mkdir ~/.ssh
     - ssh-keyscan -t rsa www.mathcrowd.cn >> ~/.ssh/known_hosts
-    - rsync --delete -Pav -e "ssh -i $SSH_RSA" ./build/html/ root@www.mathcrowd.cn:/var/www/sphinx
+    - rsync --delete -Pav -e "ssh -i $SSH_RSA" ./build/html/ root@www.mathcrowd.cn:/opt/www/sphinx
   artifacts:
     paths:
       - build
