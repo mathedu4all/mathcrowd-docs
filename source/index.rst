@@ -75,8 +75,8 @@
      - 趣味数学讨论微信群
 
 * 橘子数学社区用户 telegram 交流群组: https://t.me/mathcrowd
-* 橘子数学社区LaTeX用户 QQ 群: 319701002
-* 橘子数学社区Word用户 QQ 群: 106717022
+* 橘子数学社区技术交流 QQ 群: 319701002
+* 橘子数学社区内容交流 QQ 群: 1067172022
 
 .. toctree::
     :caption: 社区
@@ -110,6 +110,8 @@
     在线组卷        <basics/worksheet_tutorial>
 
     试题编辑        <basics/problem_edit>
+
+    挑战题编辑      <basics/puzzle_edit>
 
     分享试题        <basics/problem_share>
 
